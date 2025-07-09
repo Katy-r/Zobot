@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Zobot Demo - Kat</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zobot Demo - Zee Support</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      color: #212529;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #0d6efd;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #495057;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #adb5bd;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to the Zobot Demo Page</h1>
-  <p>Your smart assistant is ready in the corner!</p>
+  <div class="container">
+    <h1>Welcome to the Zobot Demo Page</h1>
+    <p>
+      Your smart assistant is ready in the corner to help with your concerns<br />
+      regarding your <strong>Zee subscription</strong>!
+    </p>
+    <footer>© 2025 Kat | Powered by Zobot + Zoho SalesIQ</footer>
+  </div>
 
   <!-- Zobot Widget Script -->
   <script>
     window.$zoho = window.$zoho || {};
-    $zoho.salesiq = $zoho.salesiq || { ready: function() {} };
+    $zoho.salesiq = $zoho.salesiq || { ready: function () {} };
   </script>
-  <script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq4c057140d13f5c00bbe05c5af90e273391aef33a3df1490457fda1589707bf7b" defer></script>
+  <script
+    id="zsiqscript"
+    src="https://salesiq.zohopublic.com/widget?wc=siq4c057140d13f5c00bbe05c5af90e273391aef33a3df1490457fda1589707bf7b"
+    defer
+  ></script>
 </body>
 </html>
